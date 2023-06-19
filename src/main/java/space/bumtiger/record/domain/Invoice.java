@@ -17,4 +17,8 @@ public record Invoice(String id, float amount) {
 		id = prefix + id.trim();
 		// amount=amount; // 효과 없는 문장
 	}
+	
+	public Invoice(String id) {
+		this(id, 0.f);
+	}
 }
