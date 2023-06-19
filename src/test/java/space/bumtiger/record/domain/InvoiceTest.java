@@ -12,9 +12,9 @@ class InvoiceTest {
 	@Test
 	void test() {
 		String id = "Y-118NFA";
-		var youngChang = new Invoice(id, 500000);
+		var youngChang = new Invoice(id);
 		InvoiceTest.log.info(youngChang.id());
-		assertThat(youngChang.id().indexOf(id) > 0);
+		assertThat(youngChang.amount() == 0);
 	}
 
 }
