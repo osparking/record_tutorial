@@ -15,6 +15,10 @@ public record Invoice(String id, float amount) {
 
 	public Invoice {
 		id = prefix + id.trim();
+		if (amount < 0) {
+			throw new IllegalArgumentException("-ve values not allowed");
+			// -ve : negative, +ve : positive
+		}
 		// amount=amount; // 효과 없는 문장
 	}
 	
