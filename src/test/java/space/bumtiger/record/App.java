@@ -13,5 +13,4 @@ public class App {
 		App.log.info(he.equals(she) ? "동일" : "상이");
 		App.log.info(he.name());
 	}
-
 }
