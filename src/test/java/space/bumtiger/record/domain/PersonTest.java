@@ -10,7 +10,7 @@ class PersonTest {
 	void test() {
 		int id = 12345;
 		Person myself = new Person(id, "박");
-		assertEquals(myself.getId(), id);		
+		assertEquals(myself.id(), id);		
 	}
 
 }
